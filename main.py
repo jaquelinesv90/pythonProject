@@ -1,16 +1,26 @@
-# This is a sample Python script.
+import sys
+import datetime
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+print("Python version")
+print(sys.version)
+
+now = datetime.datetime.now()
+print("current date and time : ")
+print(now.strftime("%Y -%m -%d %H:%M:%S"))
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+for item in['Mosh','John','Sarah']:
+    print(item)
 
+#imprime cada letra em uma linha
+for item in 'Python':
+    print(item)
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+for item in [1,2,3,4]:
+    print(item)
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+prices = [10,20,30]
+total = 0
+for price in prices:
+    total += price
+print(f"Total: {total}")
