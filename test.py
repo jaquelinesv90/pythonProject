@@ -23,3 +23,20 @@ for count in numbers:
 numbers2 = [5,2,1,7,4]
 numbers2.insert(2,8)
 print(numbers2)
+
+number1 = 5
+number2 = 4
+print("the sum are ",number1+number2)
+
+number1 = 5
+number2 = 4
+number3 = 8
+number4 = 10
+average = (number1 + number2+number3+number4)/4
+print("average ",average)
+
+number1 = -9
+if number1 > 0:
+    print("positive number")
+else:
+    print("negative number")
