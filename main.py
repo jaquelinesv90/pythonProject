@@ -24,3 +24,26 @@ total = 0
 for price in prices:
     total += price
 print(f"Total: {total}")
+
+
+name = input("type a name: ")
+
+if len(name) < 3:
+    print("name:minimum is 3 letters")
+
+age = int(input("type an age: "))
+if age < 0 or age > 150:
+    print("error at age")
+
+salary = int(input("type a salary: "))
+if salary == 0:
+    print("salary should be more than 0")
+
+gender = input("type an gender: ")
+if gender != 'f' and gender != 'm':
+    print("error gender")
+
+maritalStatus = input("type a marital status: ")
+if maritalStatus != 's' or maritalStatus != 'c' or\
+        maritalStatus != 'v' or maritalStatus != 'd':
+    print("marital status invalid")
